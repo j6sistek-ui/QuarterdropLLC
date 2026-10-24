@@ -23,16 +23,24 @@ The website is the organization website Apple's migration review asks for: it mu
 | `index.html` | Home page: hero, games, studio facts, contact |
 | `privacy.html` | Privacy policy for this website (each game has its own) |
 | `404.html` | Page GitHub Pages shows for a missing address |
-| `assets/site.css` | All styles; colors and type are tokens at the top |
+| `assets/site.css` | Responsive design, brand tokens and reduced-motion rules |
+| `assets/site.js` | Optional coin interaction, motion control and accessible video dialog |
 | `assets/fonts/` | Archivo and JetBrains Mono, self-hosted, with their OFL licenses |
-| `assets/acornaut-icon.webp` | Acornaut app icon for the games card |
+| `assets/acornaut-*` | Self-hosted Acornaut artwork, icon and on-demand gameplay clip |
+| `assets/space-survival.jpg` | Project artwork from the existing itch.io listing |
 | `assets/og.png` | Link-preview image (1200 × 630) |
 | `favicon.svg` | Browser tab icon |
 | `CNAME` | Tells GitHub Pages the custom domain |
 | `.nojekyll` | Serves files as they are, without Jekyll |
 | `robots.txt`, `sitemap.xml` | Search engines |
 
-No build step, no JavaScript, nothing loaded from other servers. Edit the HTML and push.
+No build step, no runtime dependencies, and no third-party embeds. All page assets are served from this domain. JavaScript progressively enhances the coin and the gameplay dialog; primary content and links remain usable without it. The video source is assigned only when a visitor opens the dialog, and playback requires a separate user action.
+
+Run `python3 scripts/check_site.py`, `node --check assets/site.js`, and `git diff --check` before publishing. The asset/anchor check also protects the required company facts and custom domain. See [the design review](design/README.md) for the assessment, asset sources and QA notes.
+
+The CSS, JS, icon and social image URLs carry a release version. Bump that query string when those assets change so returning visitors receive the new files. GitHub Pages may still briefly cache the HTML; there is no service worker to retain stale pages.
+
+`design/social-card.html` is the editable 1200 × 630 social-image source. Render it at its fixed size and export that rectangle to `assets/og.png`.
 
 ## Publishing
 
