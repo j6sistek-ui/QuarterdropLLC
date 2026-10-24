@@ -3,132 +3,102 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Quarterdrop · Independent game studio</title>
-<meta name="description" content="Quarterdrop LLC is an independent game studio in Novi, Michigan. We make quick arcade games for phones and the web, starting with Acornaut.">
+<title>Quarterdrop — Small studio. One more round.</title>
+<meta name="description" content="Quarterdrop is an independent game studio in Novi, Michigan. Discover Acornaut, our arcade space adventure, and Space Survival, our next game in development.">
 <link rel="canonical" href="https://quarterdropgames.com/">
-<meta name="theme-color" content="#EEF0EB">
+<meta name="theme-color" content="#f1f2ed">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Quarterdrop">
-<meta property="og:title" content="Quarterdrop · Independent game studio">
-<meta property="og:description" content="Quick arcade games for phones and the web, from Novi, Michigan.">
+<meta property="og:title" content="Quarterdrop — Small studio. One more round.">
+<meta property="og:description" content="Arcade spirit. New worlds. Independent games from Novi, Michigan.">
 <meta property="og:url" content="https://quarterdropgames.com/">
-<meta property="og:image" content="https://quarterdropgames.com/assets/og.png">
-<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta property="og:image" content="https://quarterdropgames.com/assets/og.png?v=20261024">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Quarterdrop. Small studio. One more round. Independent games from Novi, Michigan.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="favicon.svg?v=20261024">
 <link rel="preload" href="assets/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/site.css?v=20261024">
+<script src="assets/site.js?v=20261024" defer></script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Organization","name":"Quarterdrop LLC","alternateName":"Quarterdrop","url":"https://quarterdropgames.com/","logo":"https://quarterdropgames.com/favicon.svg","email":"acornaut@outlook.com","duns":"149991287","address":{"@type":"PostalAddress","addressLocality":"Novi","addressRegion":"MI","addressCountry":"US"},"owns":[{"@type":"VideoGame","name":"Acornaut","url":"https://acornaut.io"},{"@type":"VideoGame","name":"Space Survival","url":"https://j6sistek-ui.itch.io/space-survival"}]}
 </script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-
-<header class="wrap top">
-  <a class="brand" href="#top" aria-label="Quarterdrop home">
-    <span class="brand-coin" aria-hidden="true"></span>
-    <span class="brand-name">Quarterdrop</span>
-  </a>
-  <nav class="nav" aria-label="Main">
-    <a href="#games">Games</a>
-    <a href="#studio">Studio</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<header class="site-header">
+  <div class="wrap top">
+    <a class="brand" href="#top" aria-label="Quarterdrop home"><span class="brand-coin" aria-hidden="true"></span><span class="brand-name">Quarterdrop</span></a>
+    <nav class="nav" aria-label="Main"><a href="#games">Games</a><a href="#studio">Studio</a><a class="nav-contact" href="#contact">Say hello <span aria-hidden="true">↗</span></a></nav>
+  </div>
 </header>
-
 <main id="main">
-  <section id="top" class="wrap hero">
+  <section id="top" class="wrap hero" aria-labelledby="hero-title">
     <div class="hero-copy">
-      <p class="eyebrow">Independent game studio · Novi, Michigan</p>
-      <h1 class="wordmark">Quarter<br>drop</h1>
-      <p class="lede">We make quick arcade games for phones and the web. Pick one up, play a round, and you're already hooked on one more.</p>
-      <div class="row">
-        <a class="btn btn-ink" href="#games">See our games</a>
-        <a class="btn btn-line" href="#contact">Get in touch</a>
-      </div>
+      <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Independent game studio</p>
+      <h1 id="hero-title">Small studio.<br>One more<br><span class="accent">round.</span></h1>
+      <p class="lede">That first flight. That close call. That “one more go.” We make games worth coming back to.</p>
+      <div class="row"><a class="btn btn-ink" href="#games">Find your next game <span aria-hidden="true">↗</span></a><a class="quiet-link" href="#studio">Meet Quarterdrop <span aria-hidden="true">↓</span></a></div>
+      <p class="hero-origin"><span class="origin-rule" aria-hidden="true"></span> Built in Novi, Michigan. Played anywhere.</p>
     </div>
-    <div class="hero-art" aria-hidden="true">
-      <div class="slot">
-        <div class="coin"><div class="coin-face">25</div></div>
-        <div class="trail"><span></span><span></span></div>
-        <div class="plate">
-          <div class="plate-slot"></div>
-          <div class="plate-label">INSERT COIN</div>
-          <div class="lights"><span></span><span></span><span></span></div>
+    <div class="arcade" id="arcade">
+      <div class="arcade-top"><span class="eyebrow">The original play button</span><span class="edition">No. 025</span></div>
+      <div class="coin-stage" aria-hidden="true">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><span class="stage-cross cross-one">+</span><span class="stage-cross cross-two">+</span>
+        <div class="scene-tilt">
+          <div class="coin-flight"><div class="coin-body"><div class="coin-rim"></div><div class="coin-face">
+            <svg class="coin-stamp" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+              <defs><path id="coin-top" d="M 38,125 A 82,82 0 0,1 202,125"/><path id="coin-bottom" d="M 31,124 A 89,89 0 0,0 209,124"/></defs>
+              <circle cx="120" cy="120" r="105" fill="none" stroke="currentColor" stroke-width="1"/>
+              <text class="coin-lettering"><textPath href="#coin-top" startOffset="50%" text-anchor="middle">QUARTERDROP</textPath></text>
+              <text class="coin-lettering coin-motto"><textPath href="#coin-bottom" startOffset="50%" text-anchor="middle">ONE MORE ROUND</textPath></text>
+              <text x="120" y="147" text-anchor="middle" class="coin-value">25</text><path d="M43 124h8m138 0h8" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div></div></div>
         </div>
+        <div class="coin-shadow"></div>
+        <div class="receiver"><div class="receiver-top"><div class="coin-slot"></div></div><div class="receiver-front"><span class="receiver-label">QUARTERDROP</span><span class="receiver-light"></span></div></div>
+        <div class="impact-ring"></div>
       </div>
+      <div class="arcade-bottom"><div><span class="eyebrow arcade-status" id="arcade-status">A little coin. A new world.</span><p>Good things start with a drop.</p></div><button class="coin-trigger" type="button" data-drop hidden aria-label="Drop a quarter"><span aria-hidden="true">↓</span></button></div>
+      <p class="sr-only" aria-live="polite" id="coin-announcement"></p>
     </div>
+    <div class="hero-index"><span>01 / A spirit of play</span><a href="#games">Explore the games <span aria-hidden="true">↓</span></a></div>
   </section>
 
   <section id="games" class="night" aria-labelledby="games-title">
     <div class="wrap games">
-      <div class="games-head">
-        <h2 id="games-title" class="h2">Games</h2>
-        <p class="eyebrow">01 released · 01 in development</p>
-      </div>
-
-      <article class="game" aria-labelledby="acornaut-title">
-        <img class="game-icon" src="assets/acornaut-icon.webp" width="220" height="220" alt="Acornaut app icon">
-        <div class="game-body">
-          <h3 id="acornaut-title" class="game-title">Acornaut</h3>
-          <p class="game-copy">A one-touch arcade flight game. Tap to fly, thread the gates, and see how far you can get before the next run calls you back.</p>
-          <ul class="chips" aria-label="Where to play">
-            <li class="live">Free in your browser</li>
-            <li>App Store · coming soon</li>
-            <li>Google Play · coming soon</li>
-          </ul>
-          <div class="row">
-            <a class="btn btn-light" href="https://acornaut.io">Play Acornaut</a>
-            <a class="textlink" href="https://acornaut.io">acornaut.io</a>
+      <div class="section-heading reveal"><div><p class="eyebrow section-kicker">01 / Our games</p><h2 id="games-title">Pick your<br><span class="muted-title">next obsession.</span></h2></div><p class="section-intro">A quick escape or a fight to survive.<br>Two worlds. The same independent spirit.</p></div>
+      <div class="games-grid">
+        <article class="game-card reveal" aria-labelledby="acornaut-title">
+          <div class="game-visual acornaut-visual">
+            <img class="world-image" src="assets/acornaut-world.jpg" width="1500" height="844" alt="" loading="lazy">
+            <div class="planet-orbit" aria-hidden="true"></div>
+            <img class="acornaut-character" src="assets/acornaut-flight.webp" width="512" height="512" alt="Acornaut's squirrel astronaut in the Flight suit" loading="lazy">
+            <div class="visual-topline"><span class="game-state"><span class="status-dot" aria-hidden="true"></span> Browser preview available</span><span class="game-number">01</span></div>
+            <button class="video-trigger" type="button" data-open-video hidden><span class="play-icon" aria-hidden="true">▶</span> Watch gameplay <span class="video-duration">↗</span></button>
+            <span class="visual-caption">A small astronaut. A big adventure.</span>
           </div>
-        </div>
-      </article>
-
-      <article class="next" aria-labelledby="next-title">
-        <div class="next-head">
-          <p class="eyebrow">Next drop · in development</p>
-          <h3 id="next-title" class="next-title">Space Survival</h3>
-          <p class="next-copy">Our next game is in development. Get it early and support it on itch.io.</p>
-        </div>
-        <div class="embed">
-          <iframe src="https://itch.io/embed/5006010?linkback=true&amp;bg_color=464646&amp;fg_color=eeeeee&amp;link_color=5d5bfa&amp;border_color=363636" width="552" height="167" title="Space Survival on itch.io" loading="lazy"><a href="https://j6sistek-ui.itch.io/space-survival">Space Survival by j6sistek-ui</a></iframe>
-        </div>
-      </article>
+          <div class="game-body"><div class="game-heading"><h3 id="acornaut-title">Acornaut</h3><img src="assets/acornaut-icon.webp" width="48" height="48" alt="" loading="lazy"></div><p class="game-genre">Arcade adventure · Web &amp; mobile</p><p class="game-copy">Suit up. Take flight. Go a little further. A one-touch space adventure with colorful worlds and a crew of squirrel astronauts.</p><div class="game-actions"><a class="btn btn-light" href="https://acornaut.io">Explore &amp; play <span aria-hidden="true">↗</span></a><span class="availability">Free browser preview<br>Mobile stores coming soon</span></div></div>
+        </article>
+        <article class="game-card reveal" aria-labelledby="space-title">
+          <div class="game-visual survival-visual"><img class="world-image" src="assets/space-survival.jpg" width="794" height="446" alt="Space Survival project artwork: a spacecraft navigating an asteroid field" loading="lazy"><div class="visual-topline"><span class="game-state development"><span class="status-dot" aria-hidden="true"></span> In development</span><span class="game-number">02</span></div><span class="survival-wordmark" aria-hidden="true">SPACE<br>SURVIVAL</span><span class="visual-caption">Project artwork · An expanding frontier</span></div>
+          <div class="game-body"><div class="game-heading"><h3 id="space-title">Space Survival</h3><span class="platform-icon" aria-label="Windows"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m2 4 9-1v8H2zm11-1.2L23 1v10H13zM2 13h9v8l-9-1zm11 0h10v10l-10-1.8z"/></svg></span></div><p class="game-genre">Third-person survival · Windows PC</p><p class="game-copy">Salvage. Upgrade. Survive the next wave. Pilot your ship through an unpredictable universe of asteroid storms, wreckage, and hunters.</p><div class="game-actions"><a class="btn btn-outline" href="https://j6sistek-ui.itch.io/space-survival">Discover on itch.io <span aria-hidden="true">↗</span></a><span class="availability">Paid development build<br>Follow the journey on itch.io</span></div></div>
+        </article>
+      </div>
+      <div class="games-note"><span class="mini-coin" aria-hidden="true">25</span><p>Different worlds. That same “one more round” feeling.</p><span class="eyebrow">Made by Quarterdrop</span></div>
     </div>
   </section>
 
   <section id="studio" class="wrap studio" aria-labelledby="studio-title">
-    <div class="studio-copy">
-      <h2 id="studio-title" class="h2">The studio</h2>
-      <p>Quarterdrop is a small independent studio in Novi, Michigan. The name comes from the arcade: one quarter in, one more round. That is the feeling we build every game around.</p>
-      <p>Our games are free to start and fair to play. No accounts to make, no tracking, nothing between you and the next run.</p>
-    </div>
-    <dl class="facts">
-      <div><dt>Legal name</dt><dd>Quarterdrop LLC</dd></div>
-      <div><dt>Based in</dt><dd>Novi, Michigan, United States</dd></div>
-      <div><dt>D-U-N-S</dt><dd>149991287</dd></div>
-    </dl>
+    <div class="studio-heading reveal"><p class="eyebrow section-kicker">02 / The studio</p><h2 id="studio-title">Arcade roots.<br>Open horizons.</h2><div class="studio-seal" aria-hidden="true"><span class="brand-coin"></span><span>QUARTERDROP<br>INDEPENDENT GAMES</span><span class="seal-year">EST.<br>2026</span></div></div>
+    <div class="studio-copy reveal"><p class="studio-lead">Remember what a quarter could start?</p><p>A new world. A close call. A reason to try again. Quarterdrop takes its name from that simple arcade ritual: one quarter in, one more round.</p><p>We’re a small independent game studio based in Novi, Michigan, bringing that spirit to new adventures—from Acornaut’s colorful flights to the unpredictable frontier of Space Survival.</p><p class="studio-signoff">Small studio. Big on play.</p><dl class="facts"><div><dt>Legal name</dt><dd>Quarterdrop LLC</dd></div><div><dt>Based in</dt><dd>Novi, Michigan, United States</dd></div><div><dt>D-U-N-S</dt><dd>149991287</dd></div></dl></div>
   </section>
 
-  <section id="contact" class="wrap contact" aria-labelledby="contact-title">
-    <div class="band">
-      <div>
-        <h2 id="contact-title" class="h2">Say hello</h2>
-        <p>Press, partnerships, support or just a high score to brag about.</p>
-      </div>
-      <a class="btn btn-paper" href="mailto:acornaut@outlook.com">acornaut@outlook.com</a>
-    </div>
-  </section>
+  <section id="contact" class="contact" aria-labelledby="contact-title"><div class="wrap contact-inner reveal"><div><p class="eyebrow section-kicker">03 / Get in touch</p><h2 id="contact-title">Let’s start<br>something good.</h2><p>Press, partnerships, player support—or a high score<br class="desktop-break"> you just have to share. We’d love to hear from you.</p><a class="contact-email" href="mailto:acornaut@outlook.com">acornaut@outlook.com <span aria-hidden="true">↗</span></a></div><a class="contact-disc" href="mailto:acornaut@outlook.com" aria-label="Email Quarterdrop"><span aria-hidden="true">↗</span><span>Say hello</span></a></div></section>
 </main>
-
-<footer class="foot">
-  <div class="wrap">
-    <p>© 2026 Quarterdrop LLC · Novi, Michigan</p>
-    <nav aria-label="Footer">
-      <a href="https://acornaut.io">Acornaut</a>
-      <a href="privacy.html">Privacy</a>
-      <a href="mailto:acornaut@outlook.com">Contact</a>
-    </nav>
-  </div>
-</footer>
+<footer class="foot"><div class="wrap footer-main"><a class="brand" href="#top" aria-label="Quarterdrop home"><span class="brand-coin" aria-hidden="true"></span><span class="brand-name">Quarterdrop</span></a><p>Independent games.<br>Made for one more round.</p><nav aria-label="Footer"><a href="#games">Games</a><a href="#studio">Studio</a><a href="privacy.html">Privacy</a><button class="motion-toggle" type="button" aria-pressed="false" hidden>Motion: on</button></nav></div><div class="wrap footer-bottom"><p>© 2026 Quarterdrop LLC</p><p>Novi, Michigan, United States</p><a href="#top">Back to top ↑</a></div></footer>
+<dialog class="gameplay-dialog" aria-labelledby="video-title"><div class="dialog-header"><div><p class="eyebrow">A look inside the game</p><h2 id="video-title">Acornaut gameplay</h2></div><button class="close-dialog" type="button" aria-label="Close gameplay video">×</button></div><video controls playsinline preload="none" data-src="assets/acornaut-gameplay.mp4" data-poster="assets/acornaut-gameplay-poster.jpg" aria-label="Acornaut normal mode gameplay recording">Your browser does not support this video. <a href="assets/acornaut-gameplay.mp4">Open the gameplay video</a>.</video><p class="dialog-caption">Recorded gameplay · Normal mode <a href="https://acornaut.io">Explore Acornaut ↗</a></p></dialog>
 </body>
 </html>
