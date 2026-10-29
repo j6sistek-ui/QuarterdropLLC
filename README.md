@@ -10,7 +10,7 @@ Company website for Quarterdrop LLC, served at **https://quarterdropgames.com** 
 | Entity | Michigan limited liability company, formed 2026 |
 | Location | Novi, Michigan, United States |
 | D-U-N-S | 149991287 |
-| Contact | acornaut@outlook.com |
+| Contact | owner@quarterdropgames.com |
 | Apple Developer team | 7DH55F49XW (individual to organization migration requested 15 Oct 2026) |
 | Products | Acornaut: https://acornaut.io (game), https://acornaut.app (web build and privacy policy) |
 

@@ -49,7 +49,7 @@ for css in (ROOT / 'assets').glob('*.css'):
         if not urlsplit(ref).scheme and not (css.parent / urlsplit(ref).path).resolve().is_file():
             ERRORS.append(f'{css.name}: missing {ref}')
 home = (ROOT / 'index.html').read_text()
-for required in ('Quarterdrop LLC', 'Novi, Michigan, United States', '149991287', 'mailto:acornaut@outlook.com'):
+for required in ('Quarterdrop LLC', 'Novi, Michigan, United States', '149991287', 'mailto:owner@quarterdropgames.com'):
     if required not in home:
         ERRORS.append(f'Home page lost required company detail: {required}')
 for data in re.findall(r'<script type="application/ld\+json">(.*?)</script>', home, re.S):
